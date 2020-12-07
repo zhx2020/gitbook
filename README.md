@@ -141,3 +141,7 @@ gitbook install
 ### 书籍部署
 
 将编译后的 _book 文件部署到 github ，配置 page 。
+
+### 在线预览
+
+[GitBook电子书](https://zhx2020.github.io/book/)
