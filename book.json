@@ -8,7 +8,7 @@
 	"root": ".",
 	"links" : {
         "sidebar" : {
-            "Home" : "http://zhangjikai.com"
+            "Home" : "https://zhx2020.github.io"
         }
     },
     "styles": {
@@ -63,7 +63,7 @@
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"edit-link": {
-			"base": "https://github.com/USER/REPO/edit/BRANCH",
+			"base": "https://github.com/zhx2020/gitbook/edit/BRANCH",
 			"label": "Edit This Page"
 		},
 		"simple-page-toc": {
