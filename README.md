@@ -1,4 +1,4 @@
-## GitBook电子书
+## GitBook使用教程
 
 ### 通过npm安装
 
