@@ -62,7 +62,7 @@ gitbook build
 	"root": ".",
 	"links" : {
         "sidebar" : {
-            "Home" : "http://zhangjikai.com"
+            "Home" : "https://zhx2020.github.io"
         }
     },
     "styles": {
@@ -79,11 +79,11 @@ gitbook build
 		"search-plus",
 		"expandable-chapters",
 		"chapter-fold",
+		"github",
+		"github-buttons",
 		"splitter",
 		"prism",
 		"prism-themes",
-		"github",
-		"github-buttons",
 		"tbfed-pagefooter",
 		"edit-link",
 		"copy-code-button",
@@ -103,7 +103,7 @@ gitbook build
 			"url": "https://github.com/zhx2020"
 		},
 		"github-buttons": {
-            "repo": "zhx2020/gitbook",
+            "repo": "zhx2020/mybook",
             "types": [
                 "star",
                 "watch",
