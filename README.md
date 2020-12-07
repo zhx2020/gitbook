@@ -8,7 +8,7 @@ npm install gitbook-cli -g
 
 ### 创建两个文件
 
-**Introduction.md**
+README.md
 
 ```md
 # Introduction
