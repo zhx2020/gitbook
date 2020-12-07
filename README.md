@@ -10,14 +10,14 @@ npm install gitbook-cli -g
 
 README.md
 
-```md
+```
 # Introduction
 说明文档
 ```
 
 **SUMMARY.md**
 
-```md
+```
 # Summary
 
 * [Introduction](README.md)
@@ -31,19 +31,19 @@ README.md
 
 ### 初始化目录文件
 
-```shell
+```
 gitbook init
 ```
 
 ### 预览书籍
 
-```shell
+```
 gitbook serve
 ```
 
 ### 编译文件
 
-```shell
+```
 gitbook build
 ```
 
@@ -51,7 +51,7 @@ gitbook build
 
 创建 book.json 文件
 
-```json
+```
 {
     "title": "GitBook",
     "author" : "echo",
@@ -75,15 +75,15 @@ gitbook build
     "plugins": [
         "-lunr",
 		"-search",
-		"-highlight",
+		"back-to-top-button",
+		"highlight",
 		"search-plus",
 		"expandable-chapters",
 		"chapter-fold",
+		"splitter",
+		"-prism",
 		"github",
 		"github-buttons",
-		"splitter",
-		"prism",
-		"prism-themes",
 		"tbfed-pagefooter",
 		"edit-link",
 		"copy-code-button",
@@ -103,7 +103,7 @@ gitbook build
 			"url": "https://github.com/zhx2020"
 		},
 		"github-buttons": {
-            "repo": "zhx2020/mybook",
+            "repo": "zhx2020/gitbook",
             "types": [
                 "star",
                 "watch",
@@ -117,7 +117,7 @@ gitbook build
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"edit-link": {
-			"base": "https://github.com/zhx2020/gitbook/edit/BRANCH",
+			"base": "https://github.com/zhx2020/gitbook/edit/master",
 			"label": "Edit This Page"
 		},
 		"simple-page-toc": {
@@ -125,11 +125,8 @@ gitbook build
             "skipFirstH1": true
         },
 		"anchor-navigation-ex": {
-            "isRewritePageTitle": false,
-            "isShowTocTitleIcon": false,
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right"
+            "showLevel": false,
+            "showGoTop": false
         }
     }
 }
@@ -137,6 +134,10 @@ gitbook build
 
 安装插件
 
-```shell
+```
 gitbook install
 ```
+
+### 书籍部署
+
+将编译后的 _book 文件部署到 github ，配置 page 。

@@ -21,15 +21,15 @@
     "plugins": [
         "-lunr",
 		"-search",
-		"-highlight",
+		"back-to-top-button",
+		"highlight",
 		"search-plus",
 		"expandable-chapters",
 		"chapter-fold",
+		"splitter",
+		"-prism",
 		"github",
 		"github-buttons",
-		"splitter",
-		"prism",
-		"prism-themes",
 		"tbfed-pagefooter",
 		"edit-link",
 		"copy-code-button",
@@ -49,7 +49,7 @@
 			"url": "https://github.com/zhx2020"
 		},
 		"github-buttons": {
-            "repo": "zhx2020/mybook",
+            "repo": "zhx2020/gitbook",
             "types": [
                 "star",
                 "watch",
@@ -63,7 +63,7 @@
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"edit-link": {
-			"base": "https://github.com/zhx2020/gitbook/edit/BRANCH",
+			"base": "https://github.com/zhx2020/gitbook/edit/master",
 			"label": "Edit This Page"
 		},
 		"simple-page-toc": {
@@ -71,11 +71,8 @@
             "skipFirstH1": true
         },
 		"anchor-navigation-ex": {
-            "isRewritePageTitle": false,
-            "isShowTocTitleIcon": false,
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right"
+            "showLevel": false,
+            "showGoTop": false
         }
     }
 }
