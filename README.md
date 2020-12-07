@@ -103,7 +103,7 @@ gitbook build
 			"url": "https://github.com/zhx2020"
 		},
 		"github-buttons": {
-            "repo": "zhx2020/mybook",
+            "repo": "zhx2020/gitbook",
             "types": [
                 "star",
                 "watch",
@@ -117,7 +117,7 @@ gitbook build
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"edit-link": {
-			"base": "https://github.com/USER/REPO/edit/BRANCH",
+			"base": "https://github.com/zhx2020/gitbook/edit/BRANCH",
 			"label": "Edit This Page"
 		},
 		"simple-page-toc": {
