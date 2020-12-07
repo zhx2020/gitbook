@@ -6,7 +6,7 @@
 npm install gitbook-cli -g
 ```
 
-### 创建 README.md 和 SUMMARY.md 两个文件
+### 创建两个文件
 
 **Introduction.md**
 
@@ -45,4 +45,98 @@ gitbook serve
 
 ```shell
 gitbook build
+```
+
+### 使用插件
+
+创建 book.json 文件
+
+```json
+{
+    "title": "GitBook",
+    "author" : "echo",
+	"output.name": "site",
+    "description" : "电子书",
+    "language" : "zh-hans",
+	"gitbook" : "3.2.3",
+	"root": ".",
+	"links" : {
+        "sidebar" : {
+            "Home" : "http://zhangjikai.com"
+        }
+    },
+    "styles": {
+		"website": "styles/website.css",
+		"ebook": "styles/ebook.css",
+		"pdf": "styles/pdf.css",
+		"mobi": "styles/mobi.css",
+		"epub": "styles/epub.css"
+	},
+    "plugins": [
+        "-lunr",
+		"-search",
+		"-highlight",
+		"search-plus",
+		"expandable-chapters",
+		"chapter-fold",
+		"splitter",
+		"prism",
+		"prism-themes",
+		"github",
+		"github-buttons",
+		"tbfed-pagefooter",
+		"edit-link",
+		"copy-code-button",
+		"simple-page-toc",
+		"anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+		"theme-default": {
+			"showLevel": false
+		},
+		"prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+		"github": {
+			"url": "https://github.com/zhx2020"
+		},
+		"github-buttons": {
+            "repo": "zhx2020/mybook",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+		"tbfed-pagefooter": {
+			"copyright":"Copyright &copy zhx2020.github.io 2020",
+			"modify_label": "该文件修订时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"edit-link": {
+			"base": "https://github.com/USER/REPO/edit/BRANCH",
+			"label": "Edit This Page"
+		},
+		"simple-page-toc": {
+            "maxDepth": 3,
+            "skipFirstH1": true
+        },
+		"anchor-navigation-ex": {
+            "isRewritePageTitle": false,
+            "isShowTocTitleIcon": false,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+    }
+}
+```
+
+安装插件
+
+```shell
+gitbook install
 ```
